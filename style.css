@@ -21,7 +21,6 @@ body {
     align-items: center;
 
     background-color: #2d2d2d;
-    height: 100vh;
 }
 
 body, html {
@@ -33,7 +32,7 @@ body, html {
 
 .container {
     width: 600px;
-    height: 600px;
+    height: 800px;
     background-color: #f2eecb;
     border-radius: 4px;
     padding: 32px;
@@ -63,8 +62,40 @@ body, html {
 .header-btn {
     font-size: 1.8rem;
     font-family: 'Bungee', sans-serif;
+    cursor: pointer;
+    padding: 16px;
+    background: unset;
+    border: unset;
+    outline: unset;
+}
 
-    padding: 24px;
+.add  {
+    padding: 1.6rem;
+}
+
+.add-form {
+    display: flex;
+    align-items: center;
+}
+
+.add-input {
+    background: unset;
+    border: unset;
+    padding: 0 64px;
+    flex: 1;
+    outline: unset;
+    border-bottom: 1px solid var(--main-red-color);
+    font-family: "Homemade Apple", sans-serif;
+    font-size: 16px;
+    text-transform: lowercase;
+}
+
+.add-btn {
+    font-size: 1.8rem;
+    font-family: "Bungee", sans-serif;
+    padding: 16px;
+    padding-right: unset;
+    cursor: pointer;
     background: unset;
     border: unset;
     outline: unset;
