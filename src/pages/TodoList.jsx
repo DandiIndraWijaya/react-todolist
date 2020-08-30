@@ -8,7 +8,16 @@ import Todos from '../components/Todos';
 const TodoList = () => {
     const [ todos, setTodos] = useState([
         {
-            text: "Belajar React"
+            text: "Belajar React",
+            isCompleted: false
+        },
+        {
+            text: "Belajar React",
+            isCompleted: false
+        },
+        {
+            text: "Belajar React",
+            isCompleted: false
         },
     ]);
 
@@ -16,10 +25,17 @@ const TodoList = () => {
     
 
     const addTodo = value => {
-        const addedTodo = [...todos, { text: value}];
+        const addedTodo = [...todos, { text: value, isComplete: false}];
 
         setTodos(addedTodo);
     };
+
+    const completeTodo = index => {
+        const addedTodo = [...todos];
+        addedTodo[index].isCompleted = !addedTodo[index].isCompleted;
+
+        setTodos(addedTodo);
+    }
 
     const showAddToggle = () => setShowAdd(!showAdd);
 
@@ -27,7 +43,7 @@ const TodoList = () => {
     <Paper>
         <Header showAddToggle={showAddToggle} showAdd={showAdd} />
         <TodoForm addTodo={addTodo} showAdd={showAdd} />
-        <Todos todos={todos} />           
+        <Todos todos={todos} completeTodo={completeTodo} />           
     </Paper>               
   );
 }
