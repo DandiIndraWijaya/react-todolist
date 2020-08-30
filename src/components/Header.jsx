@@ -1,9 +1,10 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
-const Header = () => {
+const Header = ({ showAddToggle }) => {
     return (
         <section className="header">
-            <button className="header-btn main-black-color">
+            <button onClick={showAddToggle} className="header-btn main-black-color">
                 Add
             </button>
             <h1 className="header-title">
@@ -14,6 +15,10 @@ const Header = () => {
             </button>
         </section>
     )
+}
+
+Header.propTypes = {
+    showAddToggle: PropTypes.func.isRequired
 }
 
 export default Header;
