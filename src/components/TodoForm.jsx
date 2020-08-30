@@ -10,10 +10,16 @@ const TodoForm = ({ addTodo, showAdd }) => {
         if(!value){
             alert("No blank todo!");
             return;
-        } 
+        }
+
+        if(value.length > 40){
+            alert("Please create a shorter todo text");
+            setValue("");
+            return;
+        }
 
         addTodo(value);
-        setValue("")
+        setValue("");
     };
 
     if(showAdd){

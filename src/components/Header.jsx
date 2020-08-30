@@ -1,11 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Header = ({ showAddToggle }) => {
+const Header = ({ showAddToggle, showAdd }) => {
     return (
         <section className="header">
             <button onClick={showAddToggle} className="header-btn main-black-color">
-                Add
+                {showAdd ? 'Finish' : 'Add'}
             </button>
             <h1 className="header-title">
                 Todo Lists
@@ -18,7 +18,8 @@ const Header = ({ showAddToggle }) => {
 }
 
 Header.propTypes = {
-    showAddToggle: PropTypes.func.isRequired
+    showAddToggle: PropTypes.func.isRequired,
+    showAdd: PropTypes.bool.isRequired
 }
 
 export default Header;
