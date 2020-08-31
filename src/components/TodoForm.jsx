@@ -44,7 +44,7 @@ const TodoForm = ({ addTodo, showAdd }) => {
     
 }
 
-TodoForm.prototypes = {
+TodoForm.propTypes = {
     addTodo: PropTypes.func.isRequired,
     showAdd: PropTypes.bool.isRequired
 }
