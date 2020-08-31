@@ -28,114 +28,12 @@ body, html {
 }
 
 
-.container {
-  width: 600px;
-  height: 820px;
-  background-color: #f2eecb;
-  border-radius: 4px;
-  padding: 32px;
-}
-
-.frame {
-  border: 1px solid var(--main-black-color);
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.header {
-  display: flex;
-  align-items: flex-start;
-}
-
-.header-title {
-  /* flex: 1; */
-  width: 52%;
-  text-align: center;
-
-  color: var(--main-black-color);
-  font-size: 3.6rem;
-  font-family: 'Homemade Apple', sans-serif;
-  text-transform: lowercase;
-}
 
 
 
-.add  {
-  padding: 1.6rem;
-}
 
-.add-form {
-  display: flex;
-  align-items: center;
-}
 
-.add-input {
-  background: unset;
-  border: unset;
-  padding: 0 64px;
 
-  flex: 1;
-  outline: unset;
-  border-bottom: 1px solid var(--main-red-color);
-  font-family: "Homemade Apple", sans-serif;
-  font-size: 16px;
-  text-transform: lowercase;
-}
-
-.add-btn {
-  font-size: 1.8rem;
-  font-family: "Bungee", sans-serif;
-  padding: 16px;
-  padding-right: unset;
-  cursor: pointer;
-  background: unset;
-  border: unset;
-  outline: unset;
-}
-
-.add-btn.main-black-color:active{
-  text-shadow: 1px 1px 2px var(--main-black-color);
-}
-
-.todos {
-  display: flex;
-  flex-direction: column;
-  min-height: 500px;
-}
-
-.todo {
-  position: relative;
-  flex: 1 0 auto;
-  text-align: center;
-  max-height: 34px;
-  margin: 16px 0 0;
-  font-family: "Homemade Apple", sans-serif;
-  font-size: 24px;
-
-  border-bottom: 1px solid var(--main-red-color);
-}
-
-.todo-text {
-  width: 100%;
-  height: 50px;
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%);
-}
-
-.todo-placeholder-text {
-  font-family: "Homemade Apple", sans-serif;
-  font-size: 24px;
-  padding: 16px;
-  text-align: center;
-}
-
-.add-button-placeholder-text {
-  font-family: "Bungee", sans-serif;
-  font-size: 24px;
-}
 
 
 

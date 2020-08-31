@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import cx from 'classnames';
-import styles from './Button.module.css';
+import styles from './button.module.css';
 
 const Button = ({ text, onClick, color, align}) => {
     // const classNames = [
