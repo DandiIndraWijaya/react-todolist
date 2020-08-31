@@ -19,15 +19,22 @@ const TodoList = () => {
             text: "Belajar React",
             isCompleted: false
         },
+        
     ]);
 
     const [showAdd, setShowAdd] = useState(false);
     
 
     const addTodo = value => {
-        const addedTodo = [...todos, { text: value, isComplete: false}];
 
-        setTodos(addedTodo);
+        if(todos.length < 10){
+            const addedTodo = [...todos, { text: value, isComplete: false}];
+
+            setTodos(addedTodo);
+        }else {
+            alert("Only 10 todos is allowed!");
+        }
+        
     };
 
     const completeTodo = index => {
@@ -37,11 +44,13 @@ const TodoList = () => {
         setTodos(addedTodo);
     }
 
+    const clearTodos = () => setTodos([]);
+
     const showAddToggle = () => setShowAdd(!showAdd);
 
   return ( 
     <Paper>
-        <Header showAddToggle={showAddToggle} showAdd={showAdd} />
+        <Header showAddToggle={showAddToggle} showAdd={showAdd} clearTodos={clearTodos} />
         <TodoForm addTodo={addTodo} showAdd={showAdd} />
         <Todos todos={todos} completeTodo={completeTodo} />           
     </Paper>               
