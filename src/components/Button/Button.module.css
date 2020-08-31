@@ -1,0 +1,40 @@
+:root {
+    --main-red-color: #e06262;
+    --main-black-color: #484848;
+  }
+  
+  .mainRedColor {
+    color: var(--main-red-color);
+  }
+  
+  .mainBlackColor {
+    color: var(--main-black-color);
+  }
+  
+
+.headerBtn {
+    width: 24%;
+    font-size: 1.8rem;
+    font-family: 'Bungee', sans-serif;
+    cursor: pointer;
+    padding: 16px;
+    background: unset;
+    border: unset;
+    outline: unset;
+  }
+  
+  .headerBtn.mainRedColor:active {
+    text-shadow: 1px 1px 2px var(--main-red-color);
+  }
+  
+  .alignLeft {
+    text-align: left;
+  }
+  
+  .alignRight {
+    text-align: right;
+  }
+  
+  .headerBtn.mainBlackColor:active {
+    text-shadow: 1px 1px 2px var(--main-black-color);
+  }
