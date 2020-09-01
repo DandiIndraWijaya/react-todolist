@@ -16,11 +16,11 @@ export const button = ({ color, align, theme }) => {
     }
     
     return css`
+    padding: 6px 16px;
     font-size: 1.8rem;
     font-family: "Bungee", sans-serif;
     color: ${textColor};
     /* width: 24%; */
-    padding: 16px;
     cursor: pointer;
     background: unset;
     border: unset;

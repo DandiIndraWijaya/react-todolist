@@ -3,9 +3,11 @@ import { jsx } from '@emotion/core';
 import { useState } from 'react';
 import PropTypes from 'prop-types';
 // import styles from './todoform.module.css';
-import cx from 'classnames';
 import * as styles from './todoform.styles';
 import { useTheme } from 'emotion-theming';
+import Container from '../../layout/Container';
+import Item from '../../layout/Item';
+import Button from '../Button/Button';
 
 const TodoForm = ({ addTodo, showAdd }) => {
     const theme = useTheme();
@@ -47,17 +49,26 @@ const TodoForm = ({ addTodo, showAdd }) => {
             //     </form>
             // </section>
 
-            <section css={styles.add}>
-                <form css={styles.addForm} onSubmit={handleForSubmit}>
-                    <input
-                     value={value} 
-                     onChange={e => setValue(e.target.value)} 
-                     type="text" 
-                     css={styles.addInput(theme)}>
-                     </input>
-                    <button css={styles.addBtn(theme)}>
-                        Add
-                    </button>
+            <section className="todoform-component" >
+                <form onSubmit={handleForSubmit}>
+                    <Container alignItems="flex-start">
+                        <Item flex={1} padding="0 0 0 16px">
+                            <input
+                            value={value} 
+                            onChange={e => setValue(e.target.value)} 
+                            type="text" 
+                            css={styles.addInput(theme)}>
+                            </input>
+                        </Item>
+
+                        <Item >
+                            {/* <button css={styles.addBtn(theme)}>
+                                Add
+                            </button> */}
+                            <Button text="Add">
+                            </Button>
+                        </Item>
+                    </Container>
                 </form>
             </section>
         )
