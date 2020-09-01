@@ -1,12 +1,5 @@
 import { css } from '@emotion/core';
 
-export const todos = () => 
-    css`
-    display: flex;
-    flex-direction: column;
-    min-height: 500px;
-`;
-
 export const todoPlaceholderText = () => 
     css`
     font-family: "Homemade Apple", sans-serif;
