@@ -19,7 +19,7 @@ export const button = ({ color, align, theme }) => {
     font-size: 1.8rem;
     font-family: "Bungee", sans-serif;
     color: ${textColor};
-    width: 24%;
+    /* width: 24%; */
     padding: 16px;
     cursor: pointer;
     background: unset;

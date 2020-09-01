@@ -2,13 +2,13 @@
 import { jsx, css } from '@emotion/core';
 import PropTypes from 'prop-types';
 
-const Container = ({ children, direction, flexWrap, justifyContent, alignItem, alignContent }) => {
+const Container = ({ children, direction, flexWrap, justifyContent, alignItems, alignContent }) => {
     const containerStyles = css`
         display: flex;
         flex-direction: ${direction};
         flex-wrap: ${flexWrap};
         justify-content: ${justifyContent};
-        align-item: ${alignItem};
+        align-items: ${alignItems};
         align-content: ${alignContent};
     `;
 
@@ -21,7 +21,7 @@ Container.defaultProps = {
     direction: "row",
     flexWrap: "nowrap",
     justifyContent: "flex-start",
-    alignItem: "stretch",
+    alignItems: "stretch",
     alignContent: "stretch"
 }
 
@@ -54,7 +54,7 @@ Container.propTypes = {
         'right'
 
     ]),
-    alignItem: PropTypes.oneOf([
+    alignItems: PropTypes.oneOf([
         'stretch',
         'flex-start',
         'flex-end',
