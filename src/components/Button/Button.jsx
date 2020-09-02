@@ -1,7 +1,6 @@
 /** @jsx jsx  */
 // import React from 'react';
 import PropTypes from 'prop-types';
-import cx from 'classnames';
 // import styles from './button.module.css';
 import { useTheme } from 'emotion-theming';
 import { jsx } from '@emotion/core';
