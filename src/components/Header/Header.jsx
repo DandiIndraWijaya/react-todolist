@@ -2,7 +2,7 @@
 // import React from 'react';
 import { jsx } from '@emotion/core';
 import PropTypes from 'prop-types';
-import Button from '../Button/Button';
+import Button from '../Button/ButtonNoJSX';
 import { useTheme } from 'emotion-theming';
 // import styles from './header.module.css';
 import * as styles from './header.styles';

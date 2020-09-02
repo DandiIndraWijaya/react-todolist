@@ -2,12 +2,11 @@
 import { jsx } from '@emotion/core';
 import { useState } from 'react';
 import PropTypes from 'prop-types';
-// import styles from './todoform.module.css';
 import * as styles from './todoform.styles';
 import { useTheme } from 'emotion-theming';
 import Container from '../../layout/Container';
 import Item from '../../layout/Item';
-import Button from '../Button/Button';
+import Button from '../Button/ButtonNoJSX';
 
 const TodoForm = ({ addTodo, showAdd }) => {
     const theme = useTheme();
@@ -35,20 +34,6 @@ const TodoForm = ({ addTodo, showAdd }) => {
         
 
         return (
-            // <section className={styles.add}>
-            //     <form className={styles.addForm} onSubmit={handleForSubmit}>
-            //         <input
-            //          value={value} 
-            //          onChange={e => setValue(e.target.value)} 
-            //          type="text" 
-            //          className={styles.addInput}>
-            //          </input>
-            //         <button className={cx(styles.addBtn, styles.mainBlackColor)}>
-            //             Add
-            //         </button>
-            //     </form>
-            // </section>
-
             <section className="todoform-component" >
                 <form onSubmit={handleForSubmit}>
                     <Container alignItems="flex-start">
@@ -62,9 +47,6 @@ const TodoForm = ({ addTodo, showAdd }) => {
                         </Item>
 
                         <Item >
-                            {/* <button css={styles.addBtn(theme)}>
-                                Add
-                            </button> */}
                             <Button text="Add">
                             </Button>
                         </Item>

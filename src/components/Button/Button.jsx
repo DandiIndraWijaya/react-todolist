@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 // import styles from './button.module.css';
 import { useTheme } from 'emotion-theming';
 import { jsx } from '@emotion/core';
-import * as styles from './button.styles'
+import * as styles from './button.styles';
 
 const Button = ({ text, onClick, color, align}) => {
     // const classNames = [
@@ -20,7 +20,7 @@ const Button = ({ text, onClick, color, align}) => {
     //     [styles.mainRedColor]: color === 'red',
     //     [styles.alignLeft]: align === 'left',
     //     [styles.alignRight]: align === 'right'
-    // })
+    // }) 
 
     const theme = useTheme();
 
