@@ -32,3 +32,5 @@ Button.prototypes = {
     color: PropTypes.oneOf(['black', 'red']),
     align: PropTypes.oneOf(['left', 'right'])
 }
+
+export default Button
