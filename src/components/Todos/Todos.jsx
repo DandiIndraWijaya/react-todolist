@@ -1,7 +1,7 @@
 /** @jsx jsx */
 // import React from 'react';
 import { jsx } from '@emotion/core';
-import Todo from '../Todo/Todo';
+import Todo from '../Todo/TodoClass';
 import PropTypes from 'prop-types';
 // import styles from './todos.module.css';
 import * as styles from './todos.styles';
