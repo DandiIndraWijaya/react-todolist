@@ -10,28 +10,6 @@ import Container from '../../layout/Container';
 const Todos = ({ todos, completeTodo }) => {
    
     return (
-        // <section className={styles.todos}>
-        //     {todos.length > 0 &&
-        //         todos.map((todo, index) => {
-        //             return (
-        //              <Todo 
-        //              key={index} 
-        //              text={todo.text}
-        //              isCompleted={todo.isCompleted}
-        //              completeTodo={completeTodo} 
-        //              index={index}  
-        //              />
-        //             )
-        //          })
-        //     }
-        //     {todos.length === 0 && (
-        //         <div className={styles.todoPlaceholderText}>
-        //             Add todo by clicking{" "}<span className={styles.addButtonPlaceholderText}>add</span>  button on the top left corner
-        //         </div>
-        //     )}
-                                
-        // </section>
-
         <section className="todos-component">
             <Container direction="column" minHeight="500px">
 
