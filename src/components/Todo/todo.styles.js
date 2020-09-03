@@ -3,7 +3,7 @@ import { css } from '@emotion/core';
 export const todo = (theme) =>
     css`
     position: relative;
-    flex: 1 0 auto;
+    flex: 1 0 auto;s
     text-align: center;
     max-height: 34px;
     margin: 16px 0 0;
