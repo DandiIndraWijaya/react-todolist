@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Todo from '../Todo/TodoClass';
 import styled from '@emotion/styled';
 import PropTypes from 'prop-types';
@@ -20,7 +20,7 @@ const StyledAddButtonPlaceHolderText = styled.span`
 class Todos extends React.Component{
 
     render(){
-        const { todos, completeTodo, theme } = this.props;
+        const { todos, completeTodo } = this.props;
 
         return (
             <section className="todos-component">

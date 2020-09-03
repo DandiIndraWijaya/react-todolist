@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 import Paper from '../components/Paper/PaperClass';
 import Header from '../components/Header/HeaderClass';
@@ -7,21 +7,28 @@ import Todos from '../components/Todos/TodosClass';
 import Container from '../layout/Container';
 
 const TodoList = () => {
-    const [ todos, setTodos] = useState([
-        {
-            text: "Belajar React",
-            isCompleted: false
-        },
-        {
-            text: "Belajar React",
-            isCompleted: false
-        },
-        {
-            text: "Belajar React",
-            isCompleted: false
-        },
+    // const [ todos, setTodos] = useState([
+    //     {
+    //         text: "Belajar React",
+    //         isCompleted: false
+    //     },
+    //     {
+    //         text: "Belajar React",
+    //         isCompleted: false
+    //     },
+    //     {
+    //         text: "Belajar React",
+    //         isCompleted: false
+    //     },
         
-    ]);
+    // ]);
+    const [ todos, setTodos ] = useState(
+        JSON.parse(localStorage.getItem('todos')) || []
+    );
+
+    useEffect(() => {
+        localStorage.setItem('todos', JSON.stringify(todos));
+    }, [todos]);
 
     const [showAdd, setShowAdd] = useState(false);
     
