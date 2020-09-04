@@ -8,31 +8,8 @@ import Todos from '../components/Todos/TodosClass';
 import Container from '../layout/Container';
 
 const TodoList = () => {
-    // const [ todos, setTodos] = useState([
-    //     {
-    //         text: "Belajar React",
-    //         isCompleted: false
-    //     },
-    //     {
-    //         text: "Belajar React",
-    //         isCompleted: false
-    //     },
-    //     {
-    //         text: "Belajar React",
-    //         isCompleted: false
-    //     },
-        
-    // ]);
-    // const [ todos, setTodos ] = useState(
-    //     JSON.parse(localStorage.getItem('todos')) || []
-    // );
 
     const [todos, setTodos] = useStateWithLocalStorage("todos");
-
-    // useEffect(() => {
-    //     localStorage.setItem('todos', JSON.stringify(todos));
-    // }, [todos]);
-
     const [showAdd, setShowAdd] = useState(false);
     
 
