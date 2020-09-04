@@ -11,18 +11,18 @@ class TodoList extends React.Component{
     
     state = {
         showAdd: false,
-        todos: [{
-            text: "Belajar React",
-            isCompleted: false
-        },
-        {
-            text: "Belajar React",
-            isCompleted: false
-        },
-        {
-            text: "Belajar React",
-            isCompleted: false
-        }]
+        todos: []
+    }
+
+    componentDidMount(){
+        const todosStateLocalStorage = JSON.parse(localStorage.getItem('todos')) || [];
+        this.setState({
+            todos: todosStateLocalStorage
+        })
+    }
+
+    componentDidUpdate(){
+        localStorage.setItem('todos', JSON.stringify(this.state.todos));
     }
 
     addTodo = value => {
